@@ -31,7 +31,28 @@
 
 10. On the following window, select where you'd like your project's folder to be create (default location is ~/Desktop) and click "Create".
 
+## Interface Builder 
+
+11. In the Project Navigator on the left, you should see all of the files associated with our project. The only group (folder) we're interested in for the purposes of this tutorial is the HothCalculator group. The HothCalculatorTests, HothCalculatorUITests, and Products groups aren't important for now.
+
+12. Inside the HothCalculator group you should see a file named Main.storyboard. Click it and you'll be taken to the Interface Builder.
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/ChooseStoryboard.png)
+
+## Setting up the UI 
 
 
-## Building the UI with Storyboard and Autolayout
+13. Locate the button that has a circle with a square in it on the top right of the screen and click it.
+
+14. The Object Menu will appear and contain UI elements we can drag into our storyboard. Here, we already searched for a label. 
+
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AddLabelFromLibrary.png)
+
+
+
+## Building the UI 
+
+From the Object Menu, drag 2 Labels, 2 TextFields, and 5 Buttons and place them onto the ViewController like the following picture. It doesn't have to be exact but relatively close. 
+
 
