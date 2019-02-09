@@ -55,4 +55,76 @@
 
 From the Object Menu, drag 2 Labels, 2 TextFields, and 5 Buttons and place them onto the ViewController like the following picture. It doesn't have to be exact but relatively close. 
 
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AddingEverything2.png)
+
+
+### Setting up Answer Label 
+
+Click on the top label in the ViewController to select it. On the right side window, there is a upside down triangle thing called the Attributes Inspector. Click on it and make the following changes: 
+
+1. Change the "Label" text to "0". 
+
+2. Change Alignment to Center. 
+
+3. Change Font Size to 45.0.
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/ChangeSettingsOfAnswer.png)
+
+With the top label still selected, on the bottom right of the screen is the Align and Add New Constraints Button. Align is the one with a shorter rectangle on top of another. Add New Constraints is to the right of it. 
+
+Click on Align. 
+
+Click on Horizontally in Container and Vertically in Container. Then, click on Add 2 Constraints. 
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/BothAlignments.png)
+
+
+Click on Add New Constraints (to the right). 
+
+Change Width to 200 and Height to 80. Then, click on Add 2 Constraints.
+
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AnswerSizeConstraints.png)
+
+
+
+The Answer label should now be in the middle of the screen. However, we want it back up where we put it initially. With it still selected, on the right side window, click on the ruler icon. 
+
+
+
+Towards the bottom, there is a constraint item for our Vertically in Container constraint. Click Edit and change the multiplier field to 0.25. 
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AnswerVerticalAlignment.png)
+
+
+### Setting up Operator Label 
+
+
+Click on the Label under the Answer label to select it. On the right side window, select the Attributes Inspector and make the following changes: 
+
+
+1. Change the "Label" text to "?". 
+
+2. Change Alignment to Center. 
+
+3. Change Font Size to 35.0
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/ChangeSettingsOfOperator.png)
+
+With the label still selected, go to Align and click on Horizontally in Container. Add the constraint.
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/HorizontalAlignment.png)
+
+Now go to Add New Constraints (to the right), and add the following constraints: 
+
+Width and Height to 50.
+
+Top spacing to 40. Type in the topmost textfield, this will trigger the highlighted red I. This sets the top of the Operator label to always be 40 away from the bottom of the Answer Label. 
+
+Add the 3 constraints. 
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/OperatorConstraints.png)
+
+### Setting up the number Textfields 
+
 
