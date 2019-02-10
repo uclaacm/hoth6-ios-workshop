@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,17 +12,15 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorHOTH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1t7-z0-sPU" userLabel="Answer">
-                                <rect key="frame" x="107" y="95" width="200" height="80"/>
+                                <rect key="frame" x="10" y="95" width="394" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="4Gf-D2-BNZ"/>
-                                    <constraint firstAttribute="width" constant="200" id="dje-um-gIM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,9 +119,11 @@
                             <constraint firstItem="y57-zz-U0C" firstAttribute="centerX" secondItem="Ltg-af-Flq" secondAttribute="centerX" id="QGr-bs-g37"/>
                             <constraint firstItem="1t7-z0-sPU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TcD-sj-SBm"/>
                             <constraint firstItem="X4m-BU-2gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WQ3-Ct-R6t"/>
+                            <constraint firstItem="1t7-z0-sPU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Z5n-HZ-hCX"/>
                             <constraint firstItem="1t7-z0-sPU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="daV-hG-Vqh"/>
                             <constraint firstItem="RtT-e1-eyH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eQX-qU-Kgm"/>
                             <constraint firstItem="Ble-vE-ryJ" firstAttribute="centerY" secondItem="iwc-9e-zpN" secondAttribute="centerY" id="ga5-pX-wCx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1t7-z0-sPU" secondAttribute="trailing" constant="10" id="giI-T5-Dfp"/>
                             <constraint firstItem="iwc-9e-zpN" firstAttribute="leading" secondItem="Ltg-af-Flq" secondAttribute="trailing" constant="45" id="jgy-gB-OOz"/>
                             <constraint firstItem="TUF-eH-RFV" firstAttribute="centerX" secondItem="y57-zz-U0C" secondAttribute="centerX" id="nuz-V5-dXk"/>
                             <constraint firstItem="y57-zz-U0C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="si3-Kw-pcV"/>
@@ -140,6 +140,7 @@
                         <outlet property="operatorLabel" destination="iwc-9e-zpN" id="gWQ-fi-CyI"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-245" y="14"/>
         </scene>

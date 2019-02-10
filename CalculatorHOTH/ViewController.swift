@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         number1.keyboardType = UIKeyboardType.decimalPad
         number2.keyboardType = UIKeyboardType.decimalPad
-        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
         
