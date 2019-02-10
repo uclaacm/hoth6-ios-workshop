@@ -1,6 +1,9 @@
 # hoth6-ios-workshop
 
 
+The following contains all of the UI steps for Hack on The Hill 6's Intro to iOS workshop where we make a simple calculator app! 
+
+
 ## Getting Started 
 
 1. Begin by creating a new project in Xcode.
@@ -222,6 +225,8 @@ Now the Button is in the middle of the screen.  We want it back towards the bott
 Click on the ruler again on the right side window. Scroll down to the Center Y constraint and click on edit. Change the multiplier to 1.6. 
 
 
+
+<img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/EnterVertical.png" height="400" width= "250">
 
 
 ## Final Screen 
