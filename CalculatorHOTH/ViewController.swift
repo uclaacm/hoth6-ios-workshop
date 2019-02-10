@@ -9,28 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var operate = 0
-
     @IBOutlet weak var answer: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-        
-    }
     @IBOutlet weak var operatorLabel: UILabel!
-    
     @IBOutlet weak var number1: UITextField!
-    
-    
     @IBOutlet weak var number2: UITextField!
     
     
+    var operate = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        number1.keyboardType = UIKeyboardType.decimalPad
+        number2.keyboardType = UIKeyboardType.decimalPad
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     @IBAction func subtract(_ sender: Any) {
         
-     operatorLabel.text = "-"
-        
-         operate = 1
+        operatorLabel.text = "-"
+        operate = 1
         
     }
     @IBAction func add(_ sender: Any) {
@@ -47,19 +51,15 @@ class ViewController: UIViewController {
     @IBAction func multiply(_ sender: Any) {
         
          operatorLabel.text = "x"
-        
          operate = 4
     }
     
-    
     @IBAction func enter(_ sender: Any) {
         
-        var num1 = number1.text
-        var num2 = number2.text
-        
-        
-        
-        if(Int(num1!)==nil || Int(num2!)==nil){
+        let num1 = number1.text
+        let num2 = number2.text
+
+        if( num1!.count == 0 || num2!.count == 0 ){
         
         let alert = UIAlertController(title: "Alert", message: "Both of your fields must have numbers!", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
@@ -67,9 +67,7 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
             
         }
-        
         else
-        
         {
             switch operate {
             case 0:
@@ -79,31 +77,21 @@ class ViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 break
             case 1:
-                answer.text = String(Int(num1!)! - Int(num2!)!)
+                answer.text = String(Double(num1!)! - Double(num2!)!)
                 break
-                
             case 2:
-                answer.text = String(Int(num1!)! + Int(num2!)!)
+                answer.text = String(Double(num1!)! + Double(num2!)!)
                 break
             case 3:
-                answer.text = String(Int(num1!)! / Int(num2!)!)
+                answer.text = String(Double(num1!)! / Double(num2!)!)
                 break
             case 4:
-                answer.text = String(Int(num1!)! * Int(num2!)!)
+                answer.text = String(Double(num1!)! * Double(num2!)!)
+                break
+            default:
                 break
                 
-            default:
-                let alert = UIAlertController(title: "Alert", message: "You need to choose a n operator!", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                
             }
-            print(operate)
-            
-            
-        
-            
-         
-            
             
         }
         
