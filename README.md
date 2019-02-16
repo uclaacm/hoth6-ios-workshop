@@ -82,6 +82,15 @@ Click on Horizontally in Container and Vertically in Container. Then, click on A
 
 <img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/BothAlignments.png" height="300" width= "250">
 
+The Answer label should now be in the middle of the screen. However, we want it back up where we put it initially. With it still selected, on the right side window, click on the ruler icon. 
+
+<img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/Answer%20Vertical.png" height="600" width ="300">
+
+Towards the bottom, there is a constraint item for our Vertically in Container constraint. Click Edit and change the multiplier field to 0.25. 
+
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AnswerVerticalAlignment.png)
+
 Click on Add New Constraints (to the right). 
 
 Click on the left and right text fields and enter 10 for both. Change Height to 80.  Then, click on Add 3 Constraints.
@@ -91,13 +100,7 @@ Click on the left and right text fields and enter 10 for both. Change Height to 
 
 
 
-The Answer label should now be in the middle of the screen. However, we want it back up where we put it initially. With it still selected, on the right side window, click on the ruler icon. 
 
-<img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/Answer%20Vertical.png" height="600" width ="300">
-
-Towards the bottom, there is a constraint item for our Vertically in Container constraint. Click Edit and change the multiplier field to 0.25. 
-
-![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AnswerVerticalAlignment.png)
 
 
 ### Setting up Operator Label 
