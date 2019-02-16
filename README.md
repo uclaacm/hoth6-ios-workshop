@@ -131,7 +131,7 @@ Add the 3 constraints.
 
 <img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/OperatorConstraints.png" height="300" width= "250">
 
-### Setting up the number Textfields 
+### Setting up the number Text fields 
 
 
 Select the left text field. 
@@ -145,6 +145,9 @@ Select the right text field.
 Go to Add New Constraints and change the Width to 80, Height to 30, and LEADING margin constraint to 45. This will make its leading edge always 45 away from the right of Operator label.
 
 <img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/ConstraintsForRightTextField.png" height="300" width= "250">
+
+
+Now, we want to center these two text fields vertically with respect to our operator, just like in the image. To do so, we are going to control-click and hold on each text field, and then drag it to the operator label and let go. A black menu will pop up with the option to "Center Vertically".
 
 ### Setting up the operator Buttons 
 
