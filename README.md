@@ -159,6 +159,7 @@ Repeat this for the Button under it.
 
 Also repeat this for the 2 right side Buttons, but with the right side Textfield. 
 
+For each of the two top Buttons, select Align and click Vertically in Container.
 
 For each of the two bottom Buttons, select Add New Constraints and add a top constraint of 40. 
 
