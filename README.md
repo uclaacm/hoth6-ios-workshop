@@ -252,6 +252,7 @@ Here is the final screen :
 
 ## Adding Outlets and Actions: Connecting UI to Code
 
+Click the double circle picture to open to code area for the current view, hold the control button, and drag it to an area of the code
 
-![Alt text](https://i.imgur.com/fHUcSwj.gifv)
+![Alt text](https://i.imgur.com/fHUcSwj.gif)
 
