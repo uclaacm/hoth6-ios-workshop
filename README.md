@@ -1,6 +1,9 @@
 # hoth6-ios-workshop
 
 
+The following contains all of the UI steps for Hack on The Hill 6's Intro to iOS workshop where we make a simple calculator app! 
+
+
 ## Getting Started 
 
 1. Begin by creating a new project in Xcode.
@@ -79,6 +82,15 @@ Click on Horizontally in Container and Vertically in Container. Then, click on A
 
 <img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/BothAlignments.png" height="300" width= "250">
 
+The Answer label should now be in the middle of the screen. However, we want it back up where we put it initially. With it still selected, on the right side window, click on the ruler icon. 
+
+<img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/Answer%20Vertical.png" height="600" width ="300">
+
+Towards the bottom, there is a constraint item for our Vertically in Container constraint. Click Edit and change the multiplier field to 0.25. 
+
+
+![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AnswerVerticalAlignment.png)
+
 Click on Add New Constraints (to the right). 
 
 Click on the left and right text fields and enter 10 for both. Change Height to 80.  Then, click on Add 3 Constraints.
@@ -88,13 +100,7 @@ Click on the left and right text fields and enter 10 for both. Change Height to 
 
 
 
-The Answer label should now be in the middle of the screen. However, we want it back up where we put it initially. With it still selected, on the right side window, click on the ruler icon. 
 
-<img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/Answer%20Vertical.png" height="600" width ="300">
-
-Towards the bottom, there is a constraint item for our Vertically in Container constraint. Click Edit and change the multiplier field to 0.25. 
-
-![alt text](https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/AnswerVerticalAlignment.png)
 
 
 ### Setting up Operator Label 
@@ -125,7 +131,7 @@ Add the 3 constraints.
 
 <img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/feature/shirly/images/OperatorConstraints.png" height="300" width= "250">
 
-### Setting up the number Textfields 
+### Setting up the number Text fields 
 
 
 Select the left text field. 
@@ -140,6 +146,9 @@ Go to Add New Constraints and change the Width to 80, Height to 30, and LEADING 
 
 <img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/ConstraintsForRightTextField.png" height="300" width= "250">
 
+
+Now, we want to center these two text fields vertically with respect to our operator, just like in the image. To do so, we are going to control-click and hold on each text field, and then drag it to the operator label and let go. A black menu will pop up with the option to "Center Vertically".
+
 ### Setting up the operator Buttons 
 
 Select the Button right under the left side Textfield. Press CONTROL, and while holding it, drag the new blue line to the left side Textfield until it highlights it. Then let go. The following menu will appear, select Center Horizontally. This will center the Button to the Textfield.  
@@ -150,6 +159,7 @@ Repeat this for the Button under it.
 
 Also repeat this for the 2 right side Buttons, but with the right side Textfield. 
 
+For each of the two top Buttons, select Align and click Vertically in Container.
 
 For each of the two bottom Buttons, select Add New Constraints and add a top constraint of 40. 
 
@@ -223,6 +233,8 @@ Click on the ruler again on the right side window. Scroll down to the Center Y c
 
 
 
+<img src="https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/EnterVertical.png" height="400" width= "250">
+
 
 ## Final Screen 
 
@@ -239,3 +251,17 @@ Here is the final screen :
 ![](https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/EndingScreenInBlack.png)
 
 
+## Adding Outlets and Actions: Connecting UI to Code
+
+We will need to use the Assistant editor to view our source code and our storyboard at the same time.
+Click the double circle button in the top right to open to code area for the current view, hold the control button, and drag it to an area of the code.
+
+The following GIF shows how we can hold CNTRL, hold click, and drag the blue line to the ViewController class in order to connect the UI element to functionality.
+
+![Alt text](https://i.imgur.com/fHUcSwj.gif)
+
+IBActions are what happens when the user does something, and any code in them will activate when the user does the action
+
+Outlets allow you to reference the button or other object in your code IE: Check my textfields text or see if my button is clicked
+
+Inside of your ViewController class brackets, above the viewDidLoad() func, add in the two text fields as IBOutlets, naming them firstNumber and secondNumber. Add in the two labels, answer and operator, as IBOutlets as well. Below the viewDidLoad() func, add in the 5 buttons with their operation names as IBActions.
