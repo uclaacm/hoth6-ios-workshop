@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var number1: UITextField!
     @IBOutlet weak var number2: UITextField!
     
-    
     var operate = 0
     
     override func viewDidLoad() {
@@ -55,44 +54,34 @@ class ViewController: UIViewController {
     
     @IBAction func enter(_ sender: Any) {
         
-        let num1 = number1.text
-        let num2 = number2.text
-
-        if( num1!.count == 0 || num2!.count == 0 ){
-        
         let alert = UIAlertController(title: "Alert", message: "Both of your fields must have numbers!", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-
         self.present(alert, animated: true, completion: nil)
-            
-        }
-        else
-        {
+        if let num1 = number1.text, let num2 = number2.text {
             switch operate {
             case 0:
-                let alert = UIAlertController(title: "Alert", message: "You need to choose an operator!", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                
                 self.present(alert, animated: true, completion: nil)
                 break
             case 1:
-                answer.text = String(Double(num1!)! - Double(num2!)!)
+                answer.text = String(Double(num1)! - Double(num2)!)
                 break
             case 2:
-                answer.text = String(Double(num1!)! + Double(num2!)!)
+                answer.text = String(Double(num1)! + Double(num2)!)
                 break
             case 3:
-                answer.text = String(Double(num1!)! / Double(num2!)!)
+                answer.text = String(Double(num1)! / Double(num2)!)
                 break
             case 4:
-                answer.text = String(Double(num1!)! * Double(num2!)!)
+                answer.text = String(Double(num1)! * Double(num2)!)
                 break
             default:
                 break
                 
             }
-            
+        } else {
+            self.present(alert, animated: true, completion: nil)
         }
+
         
     }
     
