@@ -250,13 +250,18 @@ Here is the final screen :
 
 ![](https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/EndingScreenInBlack.png)
 
+
 ## Adding Outlets and Actions: Connecting UI to Code
 
-Click the double circle picture to open to code area for the current view, hold the control button, and drag it to an area of the code
+We will need to use the Assistant editor to view our source code and our storyboard at the same time.
+Click the double circle button in the top right to open to code area for the current view, hold the control button, and drag it to an area of the code.
+
+The following GIF shows how we can hold CNTRL, hold click, and drag the blue line to the ViewController class in order to connect the UI element to functionality.
 
 ![Alt text](https://i.imgur.com/fHUcSwj.gif)
 
-IB Actions are what happens when the user does something, and any code in them will activate when the user does the action
+IBActions are what happens when the user does something, and any code in them will activate when the user does the action
 
 Outlets allow you to reference the button or other object in your code IE: Check my textfields text or see if my button is clicked
 
+Inside of your ViewController class brackets, above the viewDidLoad() func, add in the two text fields as IBOutlets, naming them firstNumber and secondNumber. Add in the two labels, answer and operator, as IBOutlets as well. Below the viewDidLoad() func, add in the 5 buttons with their operation names as IBActions.
