@@ -256,3 +256,7 @@ Click the double circle picture to open to code area for the current view, hold 
 
 ![Alt text](https://i.imgur.com/fHUcSwj.gif)
 
+IB Actions are what happens when the user does something, and any code in them will activate when the user does the action
+
+Outlets allow you to reference the button or other object in your code IE: Check my textfields text or see if my button is clicked
+
