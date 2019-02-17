@@ -54,9 +54,9 @@ class ViewController: UIViewController {
     
     @IBAction func enter(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Alert", message: "Both of your fields must have numbers!", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Alert", message: " You must choose an operator and both of your fields must have numbers!", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-        if let num1 = number1.text, let num2 = number2.text {
+        if let num1 = number1.text, !(number1.text?.isEmpty)!, let num2 = number2.text, !(number2.text?.isEmpty)! {
             switch operate {
             case 0:
                 self.present(alert, animated: true, completion: nil)
