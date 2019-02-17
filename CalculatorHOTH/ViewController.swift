@@ -56,22 +56,22 @@ class ViewController: UIViewController {
         
         let alert = UIAlertController(title: "Alert", message: " You must choose an operator and both of your fields must have numbers!", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-        if let num1 = number1.text, !(number1.text?.isEmpty)!, let num2 = number2.text, !(number2.text?.isEmpty)! {
+        if let num1 = Double(number1.text!),  let num2 = Double(number2.text!) {
             switch operate {
             case 0:
                 self.present(alert, animated: true, completion: nil)
                 break
             case 1:
-                answer.text = String(Double(num1)! - Double(num2)!)
+                answer.text = String((num1) - (num2))
                 break
             case 2:
-                answer.text = String(Double(num1)! + Double(num2)!)
+                answer.text = String((num1) + (num2))
                 break
             case 3:
-                answer.text = String(Double(num1)! / Double(num2)!)
+                answer.text = String((num1) / (num2))
                 break
             case 4:
-                answer.text = String(Double(num1)! * Double(num2)!)
+                answer.text = String((num1) * (num2))
                 break
             default:
                 break
