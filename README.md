@@ -250,4 +250,8 @@ Here is the final screen :
 
 ![](https://github.com/uclaacm/hoth6-ios-workshop/blob/master/images/EndingScreenInBlack.png)
 
+## Adding Outlets and Actions: Connecting UI to Code
+
+
+![Alt text](https://i.imgur.com/fHUcSwj.gifv)
 
